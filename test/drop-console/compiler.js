@@ -13,9 +13,9 @@ export default (fixture, options = {}) => {
     module: {
       rules: [
         {
-          test: /\.txt$/,
+          test: /\.js$/,
           use: {
-            loader: path.resolve(__dirname, "../src/loader.js"),
+            loader: path.resolve(__dirname, "../../src/dropConsole.js"),
             options,
           },
         },
